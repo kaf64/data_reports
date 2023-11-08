@@ -29,7 +29,7 @@ SELECT COUNT([Liczba głosów]) AS 'liczba oszukanych' FROM [analiza_wybory].[db
 O dziwo, takich "oszukanych" jest dość dużo, bo aż 589.
 ## Zawody
 Wszystkich zawodów wskazanych jest **1317**.
-Oczywiście trzeba brać pod uwagę, że niektóre podane zawody są sprecyzowane, niektóre bardzo ogólnie. Przypuszczalnie kandydaci oprócz wyboru konkretnych zawodów mogli je wpisywać ręcznie. 
+Oczywiście trzeba brać pod uwagę, że niektóre podane zawody są sprecyzowane, niektóre bardzo ogólnie. Przypuszczalnie kandydaci oprócz wyboru konkretnych zawodów mogli je wpisywać ręcznie.  
 Top 10 zawodów kandydatów pod względem popularności:
 
 | Nazwa zawodu| Liczba przedstawicieli|
@@ -44,6 +44,7 @@ Top 10 zawodów kandydatów pod względem popularności:
 | parlamentarzysta | 93 |
 | emeryt | 86 |
 | nauczyciel akademicki | 84 |
+
 Top 10 zawodów kandydatów wybranych do sejmu:
 
 | Nazwa zawodu| Liczba przedstawicieli|
@@ -60,7 +61,7 @@ Top 10 zawodów kandydatów wybranych do sejmu:
 | historyk | 13 
 ## Aspekty techniczne
 Analiza została przeprowadzona w SQL Management Studio 19.1.
-Użycie opcji Tasks -> "Import flat file..." kończyło się błędem, dlatego użyto opcji Tasks -> "Import data..." z odpowiednimi typami danych i wyróżnikiem danych tekstowych (więcej szczegółów poniżej).
+Użycie opcji Tasks -> "Import flat file..." kończyło się błędem, dlatego użyto opcji Tasks -> "Import data..." z odpowiednimi typami danych i wyróżnikiem danych tekstowych (więcej szczegółów poniżej).  
 Wszystkie czynności:
 1. Zamiana kodowania pliku	 na ANSI -> w programie Notepad++ w menu Format / "convert to ANSI format"
 2. Ustawienie kwalifikatora danych tekstowych (**Text qualifier**) -> plik csv zawierał dane tekstowe ujęte w cudzysłów, co  wymagało wskazania podczas importu
